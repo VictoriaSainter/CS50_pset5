@@ -1,0 +1,12 @@
+0.  an artificial long word said to mean a lung disease caused by inhaling very fine ash and sand dust.
+1.  returns  resource usage measures for who, which can be one of the following: rusage_self, rusage_children,  rusage_thread
+2.  16
+3.  Sending before and after as pointers is a lot less costly than sending the entire object.
+4.  Once the dictionary and text file have been error checked and opened succesfully, the first part of the for loop is to read each individual element, and find out it's ASCII integer number. It can then separate the symbols into a 'word' defined by constant alpha char's, separated by a non-alpha symbol e.g. space or apostraphe.
+    It goes on to ignore any words that exceed the stated length, or words with numbers in. Once a word has been identified it goes onto perform the spell check and lets the user know if it has been misspelled.
+5.  It is easier to use fgetc rather than fscanf because you can iterate through each of the elements individually. To do error checking would be much more simple. If relying on fscanf you'd have to make many for loops to be able to do error checking for digits, non-alpha characters etc.
+6.  To make sure that these parameters can not be changed inside the function.
+7.  I started by reading in the dictionary by opening up the file. For each word read a new node is created. To work out where the node should go into the hash table, each one was run through a hash function that worked out it's index in the hash table. The node is then put at this index.
+8.  The speed was pretty similar to the final outcome, my biggest problem was getting the code to work because it kept segment faulting.
+9.  I used a few different hash functions that I found around the internet to see which was fastest. 
+10. It's hard to know how to improve the hash function, but maybe a hash function that distributes nodes more evenly at their indexes.
